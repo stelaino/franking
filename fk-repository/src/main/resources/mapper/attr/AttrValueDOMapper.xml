@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.stelaino.fk.db.attr.mapper.AttrValueMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="top.stelaino.fk.db.attr.entity.AttrValueDO">
+        <id column="ATTR_VALUE_ID" property="attrValueId" />
+        <result column="ATTR_ID" property="attrId" />
+        <result column="ATTR_NBR" property="attrNbr" />
+        <result column="ATTR_CODE" property="attrCode" />
+        <result column="ATTR_VALUE" property="attrValue" />
+        <result column="ATTR_VALUE_NAME" property="attrValueName" />
+        <result column="ATTR_VALUE_DESC" property="attrValueDesc" />
+        <result column="CREATE_DATE" property="createDate" />
+        <result column="STATUS_DATE" property="statusDate" />
+        <result column="STATUS_CD" property="statusCd" />
+        <result column="UPDATE_DATE" property="updateDate" />
+        <result column="CREATE_STAFF" property="createStaff" />
+        <result column="UPDATE_STAFF" property="updateStaff" />
+        <result column="ATTR_VALUE_SORT" property="attrValueSort" />
+        <result column="REMARK" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ATTR_VALUE_ID, ATTR_ID, ATTR_NBR, ATTR_CODE, ATTR_VALUE, ATTR_VALUE_NAME, ATTR_VALUE_DESC, CREATE_DATE, STATUS_DATE, STATUS_CD, UPDATE_DATE, CREATE_STAFF, UPDATE_STAFF, ATTR_VALUE_SORT, REMARK
+    </sql>
+
+</mapper>

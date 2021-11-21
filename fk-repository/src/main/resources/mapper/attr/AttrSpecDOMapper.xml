@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.stelaino.fk.db.attr.mapper.AttrSpecMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="top.stelaino.fk.db.attr.entity.AttrSpecDO">
+        <id column="ATTR_ID" property="attrId" />
+        <result column="ATTR_CENTER_TYPE" property="attrCenterType" />
+        <result column="ATTR_NBR" property="attrNbr" />
+        <result column="ATTR_NAME" property="attrName" />
+        <result column="ATTR_DESC" property="attrDesc" />
+        <result column="STATUS_CD" property="statusCd" />
+        <result column="CREATE_STAFF" property="createStaff" />
+        <result column="UPDATE_STAFF" property="updateStaff" />
+        <result column="CREATE_DATE" property="createDate" />
+        <result column="STATUS_DATE" property="statusDate" />
+        <result column="UPDATE_DATE" property="updateDate" />
+        <result column="REMARK" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ATTR_ID, ATTR_CENTER_TYPE, ATTR_NBR, ATTR_NAME, ATTR_DESC, STATUS_CD, CREATE_STAFF, UPDATE_STAFF, CREATE_DATE, STATUS_DATE, UPDATE_DATE, REMARK
+    </sql>
+
+</mapper>
